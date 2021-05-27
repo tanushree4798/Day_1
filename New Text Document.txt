@@ -1,0 +1,320 @@
+
+
+========================================================
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	
+			int x, y;
+			Console.WriteLine("Enter a value x");
+			x=Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Enter a value y");
+			y=Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("x+y=" +(x+y));
+		
+	}
+}
+
+
+======================================================================================================
+###############   odd and even ##############
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	
+			int number;
+			Console.WriteLine("Enter a value number");
+			number=Convert.ToInt32(Console.ReadLine());
+			
+		    if (number%2==0)
+			{
+				Console.WriteLine("even");
+			}
+			else
+			{
+				Console.WriteLine("odd");
+			}
+			Console.ReadLine();
+				
+		
+	}
+}
+
+=====================================================================
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	
+			int number;
+			Console.WriteLine("Enter your number");
+			number=Convert.ToInt32(Console.ReadLine());
+			
+		    if (number%3==0 && number%2==0)
+			{
+				Console.WriteLine("number is divisible by 2 and 3");
+			}
+			else if  (number%3==0)
+			{
+				Console.WriteLine("number is divisible by 3");
+			}
+		    else if  (number%2==0)
+			{
+				Console.WriteLine("number is divisible by 2");
+			}
+		    else 
+			{
+				Console.WriteLine("number is not divisible by 2 and 3");
+			}
+			Console.ReadLine();
+				
+		
+	}
+}
+
+
+=======================================================================================
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	
+			int age;
+			Console.WriteLine("Enter your age");
+			age=Convert.ToInt32(Console.ReadLine());
+			
+		    if (age>60)
+			{
+				Console.WriteLine("senior citizen ");
+			}
+			else if  (age<18)
+			{
+				Console.WriteLine("cannot vote");
+			}
+		    else if  (age>=18)
+			{
+				Console.WriteLine("can vote");
+			}
+
+			Console.ReadLine();
+				
+		
+	}
+}
+
+=================================================================
+############  if age is 18+ or 18 eligible 18- not eligible  ###########
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	
+			int age;
+			Console.WriteLine("Enter your age");
+			age=Convert.ToInt32(Console.ReadLine());
+			
+		    if (age>=18)
+			{
+				Console.WriteLine("Eligible");
+			}
+			else
+			{
+				Console.WriteLine("Not Eligible");
+			}
+			Console.ReadLine();
+				
+		
+	}
+}
+
+===========================================================================
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	
+		    int number ;
+		    Console.WriteLine("Enter a number");
+			number=Convert.ToInt32(Console.ReadLine());
+			
+		   
+		    if (number == 1)
+			{
+				Console.WriteLine("one");
+			}
+				
+			else if  (number == 2)
+			{
+				Console.WriteLine("two");
+			}
+		
+		    else if  (number == 3)
+			{
+				Console.WriteLine("three");
+			}
+		 
+			else if  (number == 4)
+			{
+				Console.WriteLine("four");
+			}
+		 
+		    else if  (number == 5)
+			{
+				Console.WriteLine("five");
+			}
+		    else
+			{
+				Console.WriteLine("please enter a number between 1 to 5");
+			}
+
+			Console.ReadLine();
+				
+		
+	}
+}
+
+==========================================================
+
+using System;
+public class Program
+{
+	public static void Main(String[] args)
+	{
+       
+		int i, j;
+            for (i = 1; i <= 5; i++)
+            {
+                for (j = 1; j <= i; j++)
+                {
+                    Console.Write(" * ");
+                }
+                Console.WriteLine("\n");
+            }
+		Console.ReadLine();
+	}
+}
+
+=================================================================
+
+using System;
+public class Program
+{
+	public static void Main(String[] args)
+	{
+         int i = 1;
+
+     	do
+	   {
+         Console.WriteLine(i);
+		  i++;
+		} 
+		while (i <= 10);
+         Console.ReadLine();
+
+	}
+	}
+
+
+================================================================
+
+using System;
+public class Program
+{
+	public static void Main(String[] args)
+	{
+       int i=1;
+		while (i <= 10)
+		{
+         Console.WriteLine(i);
+			i++;
+		}
+		Console.WriteLine();
+	}
+}
+
+=================================================
+using System;
+public class Program
+{
+	public static void Main(String[] args)
+	{
+       
+		int n,m=1;
+		Console.WriteLine("Enter a number of rows");
+		n=Convert.ToInt32(Console.ReadLine());
+	
+		for(int i=n;i>=1;i--)  
+   		{  
+       		for(int j=1;j<m;j++)  
+       		{  
+           		Console.Write(" ");  
+       		}  
+       		for(int k=1;k<=2*i-1;k++)  
+       		{  
+           		Console.Write("*");  
+      		 }  
+        m++;  
+     
+     		 Console.WriteLine(" ");  
+   		}
+		
+		Console.ReadLine();
+	}
+}
+
+==============================================
+
+using System;
+                   
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int[] a=new int[10];
+        for(int i=0;i<a.Length;i++)
+        {
+           Console.WriteLine("enter value: " );
+           a[i]=Convert.ToInt32(Console.ReadLine());
+        }
+        foreach(var item in a)
+        {
+            if(item%2==0)
+            {
+                Console.WriteLine("Even:" +(item));
+            }
+            else
+            {
+                Console.WriteLine("odd:" +(item));
+               
+            }
+        }
+    }
+}
+
+=====================================================================
+
